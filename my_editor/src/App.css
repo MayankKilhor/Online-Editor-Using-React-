@@ -1,0 +1,109 @@
+body{
+  margin:0;
+}
+
+.Editor{
+  background-color: hsl(225, 6%, 25%);
+}
+
+.LiveView{
+  display: flex;
+  height : 50vh;
+}
+
+.Editor-Box{
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  padding: .5rem;
+  background-color: hsl(225, 6%, 25%);
+  display: flex; 
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  overflow: hidden;
+}
+
+
+.styleeditorName{
+  padding: 2% 3%;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.stylescode{
+  height: 100% !important;
+}
+.tabs{
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+.stylestab{
+  background-color: hsl(225, 6%, 25%);;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  margin-left:1px;
+}
+.stylestab:hover {
+    box-shadow:  0px 0px 10px black;
+    transform: scale(1.1);
+  }
+.stylestab:active {
+    letter-spacing: 2px ;
+  }
+  .stylescoloumnTitle{
+    font-size: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000; 
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 900;
+    height: 50px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+
+
+}
+
+
+#toggle {
+  width: 50px;
+  display: flex;
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 20px;
+  float:right; 
+  background-color: #1a202c;
+  display: block;
+  border-radius: 1000px;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px -10px #000000;
+  transition: black 0.2s ease-in;
+}
+#toggle .toggle-inner {
+  width: 20px;
+  height: 15px;
+  background-color: white;
+  border-radius: 1000px;
+  transition: margin-left 0.2s ease-in, background-color 0.2s ease-in;
+}
+#toggle .toggle-inner.toggle-active {
+  margin-left: 20px;
+}
+
+.dark-mode {
+  color: white;
+}
+.dark-mode main {
+  background-color: #1a202c;
+}
+.dark-mode #toggle {
+  background-color: white;
+}
+.dark-mode #toggle .toggle-inner {
+  background-color: #1a202c;
+}
