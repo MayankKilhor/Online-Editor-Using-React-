@@ -1,15 +1,16 @@
 import './App.css';
 import React, { useState ,useEffect } from 'react';
-import CodeEditor from './components/CodeEditor';
+import CodeEditor from './components/CodeEditor'; //Codeeditor was
+import LocalStorage from './hooks/LocalStorage';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css';
 
 
 function App() {
   
-  const [html, useHTML] = useState('');
-  const [css, useCSS] = useState('');
-  const [js, useJS] = useState('');
+  const [html, useHTML] = LocalStorage('html', '')
+  const [css, useCSS] = LocalStorage('css', '')
+  const [js, useJS] = LocalStorage('js', '')
   const [renderView, setrenderView] = useState('')
   useEffect(() => {
     const timeout = setTimeout(() => {
