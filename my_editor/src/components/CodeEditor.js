@@ -13,10 +13,10 @@ export default function CodeEditor(props){
         value,
         theme,
         onChange
-    } = props
+    } = props   //These are props which were passed to each CodeEditor Component in App.js to help us to toggle the theme and use all 3 laguages
     function handleChange(editor , data , value){
         onChange(value)
-    }
+    }   //With the help of this function we are handling change in LiveView whenever User do a change in Editor component. 
   return (
 
     <div className="Editor-Box">
@@ -34,7 +34,8 @@ export default function CodeEditor(props){
             lineWrapping: true,
             lint: true
         }} 
-    />
+    />          
+    {/* we imported Controlled component from React-codemirror to connect the the user code with codeMirror code editor and to implement his part. */}
     </div>
   );
 }
