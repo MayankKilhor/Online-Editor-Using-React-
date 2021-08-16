@@ -1,4 +1,4 @@
-# Online Editor Using React(Dyte)
+# Online Editor Using React
  Building an Online Editor with the help of ReactJS and Hooks
 
 <img src="https://github.com/TheRoryWillAim/Online-Editor-Using-React-Dyte-/blob/main/screen%20record.gif" >
